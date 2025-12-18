@@ -154,6 +154,7 @@ section {
     display: flex;
 }
 
+
 /* Profile-Section */
 #profile {
     display: flex;
@@ -164,13 +165,13 @@ section {
 
 .section_pic-container {
     display: flex;
-    height: 400px;
-    width: 400px;
+    height: 500px;
+    width: 500px;
     margin: auto 0;
 }
 
 img {
-    border-radius: 50%;
+    border-radius: 20%;
     /* height: 300px;
     margin: auto; */
 }
@@ -189,7 +190,7 @@ img {
 }
 
 .section_text_p2 {
-    font-size: 1.75rem;
+    font-size: 2.75rem;
     margin-bottom: 1rem;
 }
 

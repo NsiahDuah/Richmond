@@ -23,6 +23,9 @@
         margin-top: 2rem;
     }
 
+    #profile {
+        margin-top: 10rem;
+    }
     #profile, .section-container {
         display: block;
     }
@@ -58,6 +61,7 @@
     #profile {
         height: 83vh;
         margin-bottom: 0;
+        margin-top: 10rem;
     }
 
     article {
