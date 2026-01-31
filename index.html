@@ -3,268 +3,500 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- page-title -->
-    <title>Richmond Duah</title>
-
-    <!-- css-files -->
-     <link rel="stylesheet" href="./style.css">
-     <link rel="stylesheet" href="./media-queries.css">
+    <!-- Title -->
+    <title>Richmond Duah - IT & Cybersecurity Analyst</title>
+    
+    <!-- Favicon - Shield Icon -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/android-chrome-512x512.png">
+    <meta name="theme-color" content="#0a1628">
+    
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <!-- desktop-navigation -->
-    <nav id="desktop-nav">
-        <!-- logo -->
-        <div class="logo">Richmond Duah</div>
-        <!-- navigation-links -->
-         <div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <!-- <li><a href="#projects">Projects</a></li> -->
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-         </div>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">Richmond Duah</span>
+            </div>
+            <div class="nav-links">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <a href="assets/Richmond_Duah_Resume.pdf" download class="btn-download">Download Resume</a>
+            </div>
+
+            <!-- Hamburger Menu -->
+            <div class="mobile-menu-toggle" id="mobile-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
     </nav>
-    <!-- Hamburger-Navigation -->
-     <nav id="hamburger-nav">
-        <!-- logo -->
-        <div class="logo">Richmond Duah</div>
-        <!-- menu -->
-        <div class="hamburger-menu">
-            <!-- menu-icon -->
-            <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-subtitle">CYBERSECURITY & IT Professional</div>
+                <h1 class="hero-title">
+                    I'm <span class="highlight">Richmond Duah</span>. 
+                    <br>A Cybersecurity and IT Professional.
+                </h1>
+                <p class="hero-description">
+                    Passionate about securing digital assets and building robust security infrastructures. 
+                    With hands-on experience in security monitoring, threat detection, and incident response, 
+                    I transform vulnerabilities into fortified defenses.
+                </p>
+                <div class="hero-cta">
+                    <a href="assets/Richmond_Duah_Resume.pdf" download class="btn-primary">Download Resume</a>
+                    <a href="#projects" class="btn-secondary">View Projects</a>
+                </div>
             </div>
-            <!-- menu-items -->
-             <div class="menu-links">
-                <ul class="nav-links">
-                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                    <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
-                    <!-- <li><a href="#projects" onclick="toggleMenu()">Projects</a></li> -->
-                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-                </ul>
-             </div>
-        </div>
-     </nav>
-
-     <!-- Hero-section -->
-     <section id="profile">
-        <!--<div class="section_pic-container">
-            <img src="/assets/img.png" alt="Richmond Duah profile picture" class="hero-pic">
-        </div>-->
-
-        <!-- Hero-text -->
-        <div class="section_text">
-            <p class="section_text_p1">Hello, I'm</p>
-            <h1 class="title">Richmond Duah</h1>
-            <p class="section_text_p2"> Cybersecurity & IT Specialist </p> 
-
-            <!-- Hero-buttons -->
-            <div class="btn-container">
-                <button class="btn btn-color-2" onclick="window.open('./assets/Richmond-Resume.pdf')">Download CV</button>
-            
-                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
-            </div>
-
-            <!-- LinkedIn -->
-            <div id="socials-container">
-                <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" onclick="location.href='https://linkedin.com/in/richmond-nsiah-duah'" title="LinkedIn">
-            
-            <!-- GitHub -->
-                <img src="./assets/github.png" alt="My GitHUb profile" class="icon" onclick="location.href='https://github.com/NsiahDuah'" title="GitHub">
-            </div>
-        </div>
-     </section>
-
-     <!-- About -->
-      <section id="about">
-        <p class="section_text_p1">Get to Know More</p>
-        <h1 class="title">About Me</h1>
-
-        <div class="section-container">
-            <div class="section_pic-container">
-                <img src="/assets/img.png" alt="Profile picture" class="about-pic">
-            </div>
-
-            <div class="about-details-container">
-                <div class="about-containers">
-                    <div class="details-container">
-                        <img src="/assets/experience.png" alt="Experience icon" class="icon">
-
-                        <h3>Certification</h3>
-                        <p>CompTIA Security+ (SY0-701) </p>
-                    </div>
-
-                    <div class="details-container">
-                        <img src="/assets/graduate.png" alt="Experience icon" class="icon">
-
-                        <h3>Education</h3>
-                        <p>BSc. Information Technology. <br> Knutsford University College, Accra. </p>
-                    </div>
+            <!-- major-certification -->
+            <div class="hero-visual">
+                <div class="security-badge">
+                    <div class="badge-icon">🛡️</div>
+                    <div class="badge-text">CompTIA Security+</div>
+                    <div class="badge-year">Certified 2025</div>
                 </div>
 
-                <div class="text-container">
+                <!-- <div class="security-badge">
+                    <div class="badge-icon">🛡️</div>
+                    <div class="badge-text">CompTIA Security+</div>
+                    <div class="badge-year">Certified 2025</div>
+                </div> -->
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll Down</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Professional Summary</h3>
                     <p>
-                        I’m a dedicated Cybersecurity and IT Specialist with hands-on experience in technical support, system maintenance, and network operations — now focused on advancing in the field of Cybersecurity.
-                        Certified in CompTIA Security+ (SY0-701), I bring a strong foundation in network defense, risk management, access control, and incident response. I’m passionate about identifying vulnerabilities, applying security controls, and contributing to safer and more resilient IT environments.
-                        My background spans IT consultancy and broadcast technology operations, where I’ve maintained secure systems, supported users, and implemented data protection practices in real-world environments.
-                        I’m continuously developing my cybersecurity skill set through home lab projects, including virtual environments for threat detection, vulnerability scanning, and SOC simulations using tools such as Wireshark, Nmap, Kali Linux, and Splunk.
+                        Cybersecurity professional with hands-on experience in security monitoring, vulnerability 
+                        assessment, incident response, and IT system protection. Skilled in analyzing logs, detecting 
+                        threats, and strengthening network security through both real-world IT roles and a dedicated 
+                        home lab SOC environment.
                     </p>
-                </div>
-            </div>
-        </div>
-
-        <img src="/assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#skills'">
-      </section>
-
-      <!-- Skills -->
-       <section id="skills">
-        <!-- <p class="section_text_p1"></p> -->
-        <h1 class="title">Skills</h1>
-
-        <div class="skills-details-container">
-            <div class="about-containers">
-                <!-- Tech-Support -->
-                <div class="details-container">
-                    <h2 class="skills-sub-title">Tech Support</h2>
-                    <div class="article-container">
-                        <!-- Skill-1 -->
-                        <article>
-                            <img src="/assets/checkmark.png" alt="Checkmark" class="icon">
-                            <div>
-                                <h3>Cybersecurity</h3>
-                                <p>Network Security & Incident Response</p>
-                            </div>
-                        </article>
-
-                        <!-- Skill-2 -->
-                        <article>
-                            <img src="/assets/checkmark.png" alt="Checkmark" class="icon">
-                            <div>
-                                <h3>IT Support</h3>
-                                <p> Troubleshooting & System Maintenance</p>
-                            </div>
-                        </article>
-
-                        <!-- <article>
-                            <img src="/assets/checkmark.png" alt="Checkmark" class="icon">
-                            <div>
-                                <h3>Web Design</h3>
-                                <p>Development & Management</p>
-                            </div>
-                        </article> -->
+                    <p>
+                        CompTIA Security+ certified, with strong analytical skills and a proactive approach to 
+                        identifying vulnerabilities and improving security posture. My experience spans from managing 
+                        broadcast IT systems to implementing security frameworks and conducting comprehensive risk assessments.
+                    </p>
+                    <div class="about-stats">
+                        <!-- <div class="stat-item">
+                            <div class="stat-number">4+</div>
+                            <div class="stat-label">Certifications</div>
+                        </div> -->
+                        <div class="stat-item">
+                            <div class="stat-number">3+</div>
+                            <div class="stat-label">Years Experience</div>
+                        </div>
                     </div>
                 </div>
+                <div class="about-education">
+                    <h3>Education & Certification</h3>
 
-                <!-- Media -->
-                <div class="details-container">
-                    <h2 class="skills-sub-title">Media</h2>
-                    <div class="article-container">
-                        <!-- Skill-3 -->
-                        <article>
-                            <img src="/assets/checkmark.png" alt="Checkmark" class="icon">
-                            <div>
-                                <h3>Broadcast Operations</h3>
-                                <p>Master control & scheduling</p>
-                            </div>
-                        </article>
-
-                        <!-- Skill-4 -->
-                        <article>
-                            <img src="/assets/checkmark.png" alt="Checkmark" class="icon">
-                            <div>
-                                <h3>Video Editing</h3>
-                                <p>Adobe, Sony, & DaVinci</p>
-                            </div>
-                        </article>
-
-                        <!-- Skill-5 -->
-                        <article>
-                            <img src="/assets/checkmark.png" alt="Checkmark" class="icon">
-                            <div>
-                                <h3>Social Media</h3>
-                                <p>Content strategy & SEO</p>
-                            </div>
-                        </article>
+                    <!-- Education -->
+                    <div class="education-item">
+                        <div class="edu-icon">🎓</div>
+                        <div class="edu-content">
+                            <h4>BSc Information Technology</h4>
+                            <p>Knutsford University College, Accra (2019–2023)</p>
+                            <p class="edu-gpa">FGPA: 3.54</p>
+                            <p class="edu-courses">Relevant coursework: Computer Crime, Forensics & Auditing, Network Security, Database Management, IT Project Management</p>
+                        </div>
                     </div>
-                </div>
 
-                <!-- Audio -->
-                <div class="details-container">
-                    <h2 class="skills-sub-title">Audio</h2>
-                    <div class="article-container">
-                        <!-- Skill-6 -->
-                        <article>
-                            <img src="/assets/checkmark.png" alt="Checkmark" class="icon">
-                            <div>
-                                <h3>Audio Engineering</h3>
-                                <p>Mixing & sound editing</p>
-                            </div>
-                        </article>
+                    <!-- CompTIA Security+ Certification -->
+                    <div class="education-item">
+                        <div class="edu-icon">🏆</div>
+                        <div class="edu-content">
+                            <h4>CompTIA Security+ (SY0-701)</h4>
+                            <p>Issued 2025</p>
+                            <p class="edu-courses">Security operations & monitoring, Incident response & digital forensics, Network defense & access control, Risk management & security architecture</p>
+                        </div>
+                    </div>
 
-                        <article>
-                            <img src="/assets/checkmark.png" alt="Checkmark" class="icon">
-                            <div>
-                                <h3>Music Production</h3>
-                                <p>Composition & editing</p>
-                            </div>
-                        </article>
+                    <!-- Virtual Experience Certifications Header -->
+                    <h3 class="certifications-subheader">Virtual Experience Programs</h3>
 
-                        <article>
-                            <img src="/assets/checkmark.png" alt="Checkmark" class="icon">
-                            <div>
-                                <h3>Songwritting</h3>
-                                <p>Lyrics & composition</p>
-                            </div>
-                        </article>
+                    <!-- Datacom Certification -->
+                    <div class="education-item certification-item">
+                        <div class="edu-icon">🔐</div>
+                        <div class="edu-content">
+                            <h4>Datacom - Cyber Security Operations Job Simulation</h4>
+                            <p>Forage • Issued November 2025</p>
+                            <p class="credential-id">Credential ID: gBghHDuWusGA9lh8</p>
+                            <p class="edu-courses">Skills: Risk Management</p>
+                        </div>
+                    </div>
+
+                    <!-- Forage Academy Data Labeling -->
+                    <div class="education-item certification-item">
+                        <div class="edu-icon">🤖</div>
+                        <div class="edu-content">
+                            <h4>Forage Academy - Data Labeling Job Simulation</h4>
+                            <p>Forage • Issued November 2025</p>
+                            <p class="credential-id">Credential ID: SYtrgwrcmT6Lwz4To</p>
+                            <p class="edu-courses">Skills: Data Privacy, PII Protection, AI Ethics</p>
+                        </div>
+                    </div>
+
+                    <!-- Tata Certification -->
+                    <div class="education-item certification-item">
+                        <div class="edu-icon">🔑</div>
+                        <div class="edu-content">
+                            <h4>Tata - Cybersecurity Analyst Job Simulation</h4>
+                            <p>Forage • Issued November 2025</p>
+                            <p class="credential-id">Credential ID: EZMoNtPE89X8Jb8XG</p>
+                            <p class="edu-courses">Skills: Identity and Access Management (IAM), Security Best Practices</p>
+                        </div>
+                    </div>
+
+                    <!-- Mastercard Certification -->
+                    <div class="education-item certification-item">
+                        <div class="edu-icon">🔑</div>
+                        <div class="edu-content">
+                            <h4>Mastercard - Cybersecurity Job Simulation</h4>
+                            <p>Forage • Issued November 2025</p>
+                            <p class="credential-id">Credential ID: PPk7ehqDB9PeETE29</p>
+                            <p class="edu-courses">Skills: Phishing Detection, Security Awareness Training</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <img src="/assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'">
-       </section>
+    </section>
 
-       <!-- Contact -->
-        <section id="contact">
-            <p class="section_text_p1">Get in Touch</p>
-            <h1 class="title">Contact Me</h1>
-
-            <div class="contact-info-upper-container">
-                
-                <div class="contact-info-container">
-                    <img src="/assets/email.png" alt="email logo" class="icon contact-icon email-icon">
-
-                    <p><a href="mailto:contact@richmonduah.dev">contact@richmonduah.dev</a></p>
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Professional Experience</h2>
+                <div class="title-underline"></div>
+                <p class="section-subtitle">Organizations I've contributed to in the past</p>
+            </div>
+            <div class="timeline">
+                <!-- Freelance Work -->
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-marker">01</div>
+                    <div class="timeline-content">
+                        <div class="timeline-period">October 2024 - Present</div>
+                        <h3>Feelance IT Support and Cybersecurity Consultant</h3>
+                        <h4>Self-Employed</h4>
+                        <ul>
+                            <li>IT Infrastructure Support & Maintenance</li>
+                            <li>Security Configuration & System Hardening</li>
+                            <li>Security Monitoring & Incident Response</li>
+                            <li>Security Awareness Training & Policy Development</li>
+                        </ul>
+                    </div>
                 </div>
 
-                <div class="contact-info-container">
-                    <img src="/assets/linkedin.png" alt="LinkedIn logo" class="icon contact-icon">
+                <!-- GBC -->
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-marker">02</div>
+                    <div class="timeline-content">
+                        <div class="timeline-period">November 2023 - October 2024</div>
+                        <h3>Technical Staff & Assistant Video Editor</h3>
+                        <h4>Ghana Broadcasting Corporation – Garden City TV</h4>
+                        <ul>
+                            <li>Monitored and maintained broadcast & IT systems, ensuring uptime and system integrity</li>
+                            <li>Applied cybersecurity hygiene, including secure file transfers and access control</li>
+                            <li>Supported system upgrades, software troubleshooting, and workflow security</li>
+                            <li>Ensured systems complied with internal policies and safe data handling procedures</li>
+                        </ul>
+                    </div>
+                </div>
 
-                    <p><a href="https://linkedin.com/in/richmond-nsiah-duah">Richmond Duah</a></p>
+                <!-- Roman Girls -->
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="timeline-marker">03</div>
+                    <div class="timeline-content">
+                        <div class="timeline-period">January 2022 - November 2023</div>
+                        <h3>IT Consultant</h3>
+                        <h4>Kumasi Roman Catholic Girls' JHS</h4>
+                        <ul>
+                            <li>Conducted security checks on school IT systems and enforced data protection practices</li>
+                            <li>Implemented secure user access management procedures</li>
+                            <li>Provided staff training on cybersecurity best practices and safe internet usage</li>
+                            <li>Managed network security controls and responded to security-related issues</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="title-underline"></div>
+                <p class="section-subtitle">Cybersecurity work I'm proud of</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card" data-aos="fade-up">
+                    <div class="project-header">
+                        <div class="project-icon">🏠</div>
+                        <div class="project-tag">SOC Lab</div>
+                    </div>
+                    <h3>Home Lab SOC Environment</h3>
+                    <p>Deployed a virtual network using VirtualBox with Windows, Linux, and Kali nodes. Configured a mini SOC environment using Splunk and ELK to simulate SIEM monitoring, log analysis, and alert triage.</p>
+                    <div class="project-highlights">
+                        <span class="highlight-tag">Splunk</span>
+                        <span class="highlight-tag">ELK Stack</span>
+                        <span class="highlight-tag">VirtualBox</span>
+                        <span class="highlight-tag">Threat Analysis</span>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-header">
+                        <div class="project-icon">💳</div>
+                        <div class="project-tag">Virtual Experience</div>
+                    </div>
+                    <h3>Mastercard Cybersecurity Program</h3>
+                    <p>Served as an analyst on Mastercard's Security Awareness Team. Identified and reported security threats such as phishing. Analyzed business areas needing robust security training and implemented training procedures.</p>
+                    <div class="project-highlights">
+                        <span class="highlight-tag">Phishing Detection</span>
+                        <span class="highlight-tag">Security Awareness</span>
+                        <span class="highlight-tag">Training Implementation</span>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-header">
+                        <div class="project-icon">🔍</div>
+                        <div class="project-tag">Investigation</div>
+                    </div>
+                    <h3>Datacom Cybersecurity Simulation</h3>
+                    <p>Investigated a cyberattack and produced a comprehensive report documenting findings. Outlined key recommendations to improve client's cybersecurity posture and conducted comprehensive risk assessment.</p>
+                    <div class="project-highlights">
+                        <span class="highlight-tag">Incident Response</span>
+                        <span class="highlight-tag">Risk Assessment</span>
+                        <span class="highlight-tag">Report Writing</span>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-header">
+                        <div class="project-icon">🔐</div>
+                        <div class="project-tag">IAM</div>
+                    </div>
+                    <h3>Tata Security Analyst Simulation</h3>
+                    <p>Collaborated with Cybersecurity Consulting team on identity and access management (IAM). Acquired expertise in IAM principles, cybersecurity best practices, and strategic alignment with business objectives.</p>
+                    <div class="project-highlights">
+                        <span class="highlight-tag">IAM</span>
+                        <span class="highlight-tag">Best Practices</span>
+                        <span class="highlight-tag">Documentation</span>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="project-header">
+                        <div class="project-icon">🤖</div>
+                        <div class="project-tag">AI Operations</div>
+                    </div>
+                    <h3>Forage Data Labeling Simulation</h3>
+                    <p>Worked as Data Labeling Analyst reviewing customer support messages. Classified messages for Intent, Sentiment, and PII using consistent labeling schema. Evaluated edge cases and maintained data consistency.</p>
+                    <div class="project-highlights">
+                        <span class="highlight-tag">PII Protection</span>
+                        <span class="highlight-tag">Data Privacy</span>
+                        <span class="highlight-tag">AI Ethics</span>
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Footer -->
-        <footer>
-            <nav>
-                <div class="nav-links-container">
-                    
-                    <ul class="nav-links">
-                        <li><a href="#profile">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#skills">Skills</a></li>
-                        <!-- <li><a href="#projects">Projects</a></li> -->
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Core Competencies</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category" data-aos="fade-up">
+                    <h3>Security Monitoring</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span>SIEM (Splunk)</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Log Analysis</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Alert Triage</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>IDS/IPS (Snort, Suricata)</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 75%"></div></div>
+                        </div>
+                    </div>
                 </div>
-            </nav>
 
-            <p>Copyright &#169; 2025 Richmond Duah. All Rights Reserved</p>
-        </footer>
-    <!-- js-script -->
-    <script src="./script.js"></script>
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+                    <h3>Threat Detection & Analysis</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span>Network Traffic Analysis</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Wireshark</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Malware Behavior Analysis</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 70%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Endpoint Security</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 75%"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                    <h3>Vulnerability Assessment</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span>Nmap</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>GVM/Nessus</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 75%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>System Hardening</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Configuration Review</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+                    <h3>Tools & Technologies</h3>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Splunk</span>
+                        <span class="tech-tag">ELK Stack</span>
+                        <span class="tech-tag">Suricata</span>
+                        <span class="tech-tag">Snort</span>
+                        <span class="tech-tag">Nmap</span>
+                        <span class="tech-tag">Wireshark</span>
+                        <span class="tech-tag">GVM</span>
+                        <span class="tech-tag">Nessus</span>
+                        <span class="tech-tag">Windows Server</span>
+                        <span class="tech-tag">Linux</span>
+                        <span class="tech-tag">Kali</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">PowerShell</span>
+                        <span class="tech-tag">Bash</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+
+<section id="contact" class="contact">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Let's Connect</h2>
+            <div class="title-underline"></div>
+            <p class="section-subtitle">Feel free to reach out for opportunities or collaborations</p>
+        </div>
+        <div class="contact-links-container">
+            <a href="mailto:contact@richmonduah.dev" class="contact-link-card">
+                <div class="contact-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="4" width="20" height="16" rx="2"/>
+                        <path d="m2 7 10 6 10-6"/>
+                    </svg>
+                </div>
+                <div class="contact-info">
+                    <h3>Email</h3>
+                    <p>contact@richmonduah.dev</p>
+                </div>
+                <div class="contact-arrow">→</div>
+            </a>
+
+            <a href="https://www.linkedin.com/in/richmond-nsiah-duah" target="_blank" rel="noopener noreferrer" class="contact-link-card">
+                <div class="contact-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                        <rect x="2" y="9" width="4" height="12"/>
+                        <circle cx="4" cy="4" r="2"/>
+                    </svg>
+                </div>
+                <div class="contact-info">
+                    <h3>LinkedIn</h3>
+                    <p>Connect with me professionally</p>
+                </div>
+                <div class="contact-arrow">→</div>
+            </a>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy;2026 Richmond Duah. All rights reserved.</p>
+                    <p>Securing digital assets, one system at a time.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#projects">Projects</a> 
+                    <a href="#skills">Skills</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
+    
